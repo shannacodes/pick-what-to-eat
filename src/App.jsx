@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import logo from './assets/pickforme.png';
 import RandomRestaurantCard from './components/RandomRestaurantCard';
 import OtherRestaurantList from './components/OtherRestaurantList';
+import PoweredBy from './components/PoweredBy';
 
 function App() {
   const [zipCode, setZipCode] = useState('');
@@ -85,14 +86,14 @@ function App() {
           Choose for me!
         </button>
 
-        <div class="small-text">NOTE: Please go{' '}
+        <div className="small-text">NOTE: Please go{' '}
           <a
             href="https://cors-anywhere.herokuapp.com/corsdemo"
             target="_blank"
             rel="noopener noreferrer"
           >
             here
-          </a>{' '}and click to request temporary access to the demo server if this is not working.</div>
+          </a>{' '}and request temporary access to the demo server if data is not loading.</div>
    
         {randomRestaurant && ( 
           <RandomRestaurantCard randomRestaurant={randomRestaurant} />
@@ -101,6 +102,8 @@ function App() {
         {restaurants.length > 0 && (
           <OtherRestaurantList restaurants={restaurants} />
         )}
+
+        <PoweredBy />
       </div>
     </>
   );

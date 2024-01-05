@@ -18,7 +18,7 @@ const RandomRestaurantCard = ({ randomRestaurant }) => {
               <img
                 src={randomRestaurant.image_url}
                 alt="Image from selected restaurant"
-                style={{ maxWidth: "50%" }}
+                style={{ maxWidth: "75%" }}
                 />
             </p>
         </div>

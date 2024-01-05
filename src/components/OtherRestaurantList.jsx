@@ -2,7 +2,7 @@ import React from "react";
 
 const OtherRestaurantList = ({ restaurants }) => {
     return (
-        <div>
+        <div className="other-restaurants-container">
             <h3>Discover Other Restaurants Near You...</h3>
             <ul>
             {restaurants.map((restaurant) => (
