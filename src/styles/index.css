@@ -2,7 +2,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  align-items: center;
 }
 
 body {
@@ -93,7 +92,7 @@ li {
   border-radius: 8px;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
   color: #333;
-  max-width: 75%;
+  max-width: 80%;
 }
 
 @keyframes fadeIn {
@@ -128,7 +127,7 @@ li {
   border-radius: 8px;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
   color: #333;
-  max-width: 75%;
+  max-width: 80%;
 }
 
 .other-restaurants-container {
