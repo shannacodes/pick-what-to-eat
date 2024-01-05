@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  align-items: center;
 }
 
 body {
@@ -13,6 +14,16 @@ body {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
+}
+
+a {
+  color: #6c5b7b;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #6c5b7b;
+  text-decoration: underline;
 }
 
 .container {
@@ -43,6 +54,7 @@ label {
   margin-bottom: 10px;
   font-size: 16px;
   color: #333;
+  font-weight: 600;
 }
 
 input {
@@ -62,6 +74,7 @@ button {
   border: none;
   border-radius: 4px;
   transition: background-color 0.3s;
+  font-weight: 600;
 }
 
 button:hover {
@@ -80,6 +93,7 @@ li {
   border-radius: 8px;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
   color: #333;
+  max-width: 75%;
 }
 
 @keyframes fadeIn {
@@ -96,7 +110,35 @@ li {
 }
 
 .small-text {
+  margin-bottom: 20px;
+  padding: 20px 20px 20px 20px;
+  font-size: .75em;
+}
+
+.restaurant-card {
   margin-top: 20px;
   margin-bottom: 20px;
-  font-size: .75em;
+  padding: 20px 20px 20px 20px;
+}
+
+.restaurant-card-details {
+  background-color: #fff;
+  margin: 10px 0;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  color: #333;
+  max-width: 75%;
+}
+
+.other-restaurants-container {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 20px 20px 20px 20px;
+}
+
+.main-form-container {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 20px 20px 20px 20px; 
 }

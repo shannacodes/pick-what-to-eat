@@ -5,11 +5,16 @@ const PoweredBy = () => {
     return (
         <div className="small-text">
             Data powered by 
-            <img 
-                src={yelplogo} 
-                alt="Yelp Logo" 
-                style={{ width: 75 }}>
-            </img>
+            <a href="https://www.yelp.com" 
+                alt="Link to Yelp.com"
+                target="_blank"
+                rel="noopener noreferrer">
+                    <img 
+                        src={yelplogo} 
+                        alt="Yelp Logo" 
+                        style={{ width: 75 }}>
+                    </img>
+            </a>
         </div>
     )
 };

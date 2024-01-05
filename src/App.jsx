@@ -64,27 +64,28 @@ function App() {
         <img
           src={logo}
           alt="Pick For Me App Logo"
-          style={{ maxWidth: '100%', height: 'auto' }}
+          style={{ maxWidth: '100%', height: 'auto', display: 'block', margin: 'auto' }}
         />
-
-        <h1>Can't figure out what to eat?</h1>
-        <h2>Let us pick for you.</h2>
-        <p>Start by entering the fields below.</p>
-        <br></br>
-        <label>
-          Your Zip Code: {' '} 
-          <input 
-            type="text"
-            id="zipCode" 
-            value={zipCode} 
-            onChange={handleZipCodeChange} 
-            aria-label="Zip Code"
-            aria-required="true" 
-          />
-        </label>
-        <button onClick={handlePickForMe} aria-label='Choose for me'>
-          Choose for me!
-        </button>
+        <div className="main-form-container">
+          <h1>Can't figure out what to eat?</h1>
+          <h2>Let us pick for you!</h2>
+          <p>Try out this fun app that takes the headache out of deciding what to eat when you're just too <i>hangry</i> to decide!</p><br />
+          <p>Simply fill out the form below.</p>
+          <br></br>
+          <label>
+            Your Zip Code: {' '} 
+              type="text"
+              id="zipCode" 
+              value={zipCode} 
+              onChange={handleZipCodeChange} 
+              aria-label="Zip Code"
+              aria-required="true" 
+            />
+          </label>
+          <button onClick={handlePickForMe} aria-label='Choose for me'>
+            Choose for me!
+          </button>
+        </div>
 
         <div className="small-text">NOTE: Please go{' '}
           <a
