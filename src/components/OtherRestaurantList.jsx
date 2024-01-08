@@ -6,7 +6,16 @@ const OtherRestaurantList = ({ restaurants }) => {
             <h3>Discover Other Restaurants Near You...</h3>
             <ul>
             {restaurants.map((restaurant) => (
-                <li key={restaurant.id}>{restaurant.name}</li>
+                <li key={restaurant.id}>
+                    <a 
+                      href={restaurant.url} 
+                      alt='Yelp restaurant website'
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      >
+                        {restaurant.name}
+                    </a>
+                </li>
             ))}
             </ul>
       </div>

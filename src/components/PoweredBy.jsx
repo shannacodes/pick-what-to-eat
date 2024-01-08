@@ -3,12 +3,12 @@ import yelplogo from '../assets/cropped-yelp_logo.png';
 
 const PoweredBy = () => {
     return (
-        <div className="small-text">
-            Data powered by 
+        <div class="small-text">
+            Powered by {' '}
             <a href="https://www.yelp.com" 
                 alt="Link to Yelp.com"
                 target="_blank"
-                rel="noopener noreferrer">
+                >
                     <img 
                         src={yelplogo} 
                         alt="Yelp Logo" 

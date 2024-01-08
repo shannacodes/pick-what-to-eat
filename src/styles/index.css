@@ -52,7 +52,7 @@ label {
   display: block;
   margin-bottom: 10px;
   font-size: 16px;
-  color: #333;
+  color: #6c5b7b;
   font-weight: 600;
 }
 
@@ -62,6 +62,7 @@ input {
   border: 1px solid #ccc;
   border-radius: 4px;
   margin-bottom: 10px;
+  background-color: #fff;
 }
 
 button {

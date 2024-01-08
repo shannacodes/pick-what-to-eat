@@ -74,6 +74,7 @@ function App() {
           <br></br>
           <label>
             Your Zip Code: {' '} 
+            <input 
               type="text"
               id="zipCode" 
               value={zipCode} 
@@ -96,15 +97,17 @@ function App() {
             here
           </a>{' '}and request temporary access to the demo server if data is not loading.</div>
    
-        {randomRestaurant && ( 
-          <RandomRestaurantCard randomRestaurant={randomRestaurant} />
-        )}
+        <div>
+          {randomRestaurant && ( 
+            <RandomRestaurantCard randomRestaurant={randomRestaurant} />
+          )}
 
-        {restaurants.length > 0 && (
-          <OtherRestaurantList restaurants={restaurants} />
-        )}
+          {restaurants.length > 0 && (
+            <OtherRestaurantList restaurants={restaurants} />
+          )}
 
-        <PoweredBy />
+          <PoweredBy />
+        </div>
       </div>
     </>
   );
