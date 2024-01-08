@@ -7,8 +7,6 @@
 body {
   font-family: 'Poppins', sans-serif;
   background-color: #f9f4f4;
-  margin: 0;
-  padding: 0;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -93,7 +91,7 @@ li {
   border-radius: 8px;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
   color: #333;
-  max-width: 75%;
+  max-width: 80%;
 }
 
 @keyframes fadeIn {
@@ -110,8 +108,13 @@ li {
 }
 
 .small-text {
-  margin-bottom: 20px;
   padding: 20px 20px 20px 20px;
+  font-size: .75em;
+}
+
+.powered-by {
+  padding: 20px 20px 20px 20px;
+  margin-bottom: 20px;
   font-size: .75em;
 }
 
