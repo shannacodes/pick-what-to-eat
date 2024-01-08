@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import logo from './assets/pickforme.png';
+import hungrycouple from './assets/hungry-couple.png';
 import RandomRestaurantCard from './components/RandomRestaurantCard';
 import OtherRestaurantList from './components/OtherRestaurantList';
 import PoweredBy from './components/PoweredBy';
@@ -65,6 +66,11 @@ function App() {
           src={logo}
           alt="Pick For Me App Logo"
           style={{ maxWidth: '100%', height: 'auto', display: 'block', margin: 'auto' }}
+        />
+        <img
+          src={hungrycouple}
+          alt="Couple eating pizza"
+          style={{ maxWidth: '100%', height: 'auto', display: 'block', margin: 'auto', borderRadius: '50px' }}
         />
         <div className="main-form-container">
           <h1>Can't figure out what to eat?</h1>
